@@ -2,9 +2,14 @@ name: Build ZMK firmware
 on:
   workflow_dispatch:
   push:
+    branches:
+      - "hafu-*"
     paths:
       - "boards/*"
       - "config/*"
+      - "build.yaml"
+    tags-ignore:
+      - "*"
 
 jobs:
   build:
