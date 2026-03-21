@@ -160,7 +160,7 @@
 
             bindings = <
 &kp ESC         &kp Q              &kp W             &kp F                  &kp P                &kp B                    &kp J        &kp L                      &kp U                  &kp Y              &kp SINGLE_QUOTE      &none
-&none           &hm_l RIGHT_ALT A  &hm_l LEFT_GUI R  &hm_l RIGHT_CONTROL S  &hm_shift_l LSHFT T  &kp G                    &kp M        &hm_shift_r RIGHT_SHIFT M  &hm_r RIGHT_CONTROL E  &hm_r RIGHT_WIN I  &hm_r RIGHT_ALT O     &none
+&none           &hm_l RIGHT_ALT A  &hm_l LEFT_GUI R  &hm_l RIGHT_CONTROL S  &hm_shift_l LSHFT T  &kp G                    &kp M        &hm_shift_r RIGHT_SHIFT N  &hm_r RIGHT_CONTROL E  &hm_r RIGHT_WIN I  &hm_r RIGHT_ALT O     &none
 &kp LEFT_SHIFT  &hm_l LEFT_ALT Z   &kp X             &kp C                  &kp D                &kp V      &none  &none  &kp K        &kp H                      &kp COMMA              &kp DOT            &hm_r LEFT_ALT SLASH  &kp RIGHT_SHIFT
 &none           &none              &none             &lt 3 ESCAPE           &lt 1 SPACE          &lt 2 TAB                &lt 5 ENTER  &lt 4 BACKSPACE            &lt 6 DELETE           &none              &none                 &none
             >;
