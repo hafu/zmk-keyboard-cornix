@@ -7,8 +7,6 @@
 #include "zmk-helpers/helper.h"
 #include "includes/cornix54.h"
 
-#define CONFIG_BT_CTLR_TX_PWR_PLUS_8
-
 // tap windows for ctl alt and gui
 
 #define HM_TAPPING_TERM 250
