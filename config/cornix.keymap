@@ -136,44 +136,14 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <3 2>;
-            then-layer = <4>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
 
-        cb_ltm {
-            bindings = <&kp ESC>;
-            key-positions = <2 4>;
-            layers = <0 1>;
-        };
-
-        cb_lm {
-            bindings = <&kp TAB>;
-            key-positions = <14 16>;
-            layers = <0 1>;
-        };
-
-        cb_enter {
-            bindings = <&kp RET>;
-            key-positions = <21 19>;
-            layers = <0 1>;
-        };
-
-        layer3 {
-            bindings = <&kp N3>;
-            key-positions = <5 6>;
-        };
-
-        layer4 {
-            bindings = <&kp N4>;
-            key-positions = <5 6>;
+        cb_capsword {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
         };
     };
 
@@ -194,7 +164,7 @@
 &kp ESC         &kp Q              &kp W             &kp F                  &kp P                &kp B                    &kp J        &kp L                      &kp U                  &kp Y              &kp SINGLE_QUOTE      &none
 &none           &hm_l RIGHT_ALT A  &hm_l LEFT_GUI R  &hm_l RIGHT_CONTROL S  &hm_shift_l LSHFT T  &kp G                    &kp M        &hm_shift_r RIGHT_SHIFT M  &hm_r RIGHT_CONTROL E  &hm_r RIGHT_WIN I  &hm_r RIGHT_ALT O     &none
 &kp LEFT_SHIFT  &hm_l LEFT_ALT Z   &kp X             &kp C                  &kp D                &kp V      &none  &none  &kp K        &kp H                      &kp COMMA              &kp DOT            &hm_r LEFT_ALT SLASH  &kp RIGHT_SHIFT
-&none           &none              &none             &lt 3 ESCAPE           &lt 1 SPACE          &lt 2 TAB                &lt 5 ENTER  &lt 4 BACKSPACE            &lt 6 BACKSPACE        &none              &none                 &none
+&none           &none              &none             &lt 3 ESCAPE           &lt 1 SPACE          &lt 2 TAB                &lt 5 ENTER  &lt 4 BACKSPACE            &lt 6 DELETE           &none              &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -331,6 +301,15 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
