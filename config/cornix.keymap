@@ -210,7 +210,7 @@
             bindings = <
 &trans  &trans  &trans  &trans     &to 0        &tog 1                     &kp K_AGAIN  &kp K_PASTE     &kp K_COPY  &kp K_CUT     &kp K_UNDO       &none
 &trans  &trans  &trans  &trans     &trans       &trans                     &caps_word   &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&trans  &trans  &trans  &trans     &to 2        &trans     &trans  &trans  &kp INSERT   &kp HOME        &kp PG_DN   &kp PG_UP     &kp END          &none
+&trans  &trans  &trans  &trans     &tog 2       &trans     &trans  &trans  &kp INSERT   &kp HOME        &kp PG_DN   &kp PG_UP     &kp END          &none
 &trans  &trans  &trans  &lt 4 ESC  &lt 2 SPACE  &lt 3 TAB                  &kp ENTER    &kp BACKSPACE   &kp DELETE  &none         &none            &none
             >;
 
@@ -231,7 +231,7 @@
             bindings = <
 &trans  &trans  &trans  &trans        &to 0        &tog 1                     &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
 &trans  &trans  &trans  &trans        &trans       &trans                     &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&trans  &trans  &trans  &trans        &to 3        &trans     &trans  &trans  &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&trans  &trans  &trans  &trans        &tog 3       &trans     &trans  &trans  &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
 &trans  &trans  &trans  &lt 4 ESCAPE  &lt 2 SPACE  &lt 3 TAB                  &mkp MCLK    &mkp LCLK       &mkp RCLK       &none         &none            &none
             >;
 
@@ -251,7 +251,7 @@
             bindings = <
 &trans  &trans  &trans  &trans        &to 0        &tog 1                     &none       &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none        &none
 &trans  &trans  &trans  &trans        &trans       &trans                     &none       &kp C_PREV  &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT   &none
-&trans  &trans  &trans  &trans        &to 4        &trans     &trans  &trans  &none       &kp F13     &kp F14               &kp C_SLEEP           &kp C_POWER  &none
+&trans  &trans  &trans  &trans        &tog 4       &trans     &trans  &trans  &none       &kp F13     &kp F14               &kp C_SLEEP           &kp C_POWER  &none
 &trans  &trans  &trans  &lt 4 ESCAPE  &lt 2 SPACE  &lt 3 TAB                  &kp C_STOP  &kp C_PLAY  &kp K_MUTE            &none                 &none        &none
             >;
 
@@ -271,7 +271,7 @@
             bindings = <
 &none  &kp LEFT_BRACKET  &kp N7  &kp N8     &kp N9  &kp RIGHT_BRACKET                  &tog 1       &to 0            &trans        &trans  &trans  &trans
 &none  &kp SEMICOLON     &kp N4  &kp N5     &kp N6  &kp EQUAL                          &trans       &trans           &trans        &trans  &trans  &trans
-&none  &kp GRAVE         &kp N1  &kp N2     &kp N3  &kp BACKSLASH      &trans  &trans  &trans       &to 5            &trans        &trans  &trans  &trans
+&none  &kp GRAVE         &kp N1  &kp N2     &kp N3  &kp BACKSLASH      &trans  &trans  &trans       &tog 5           &trans        &trans  &trans  &trans
 &none  &none             &none   &kp COMMA  &kp N0  &kp MINUS                          &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &trans  &trans  &trans
             >;
 
@@ -285,7 +285,7 @@
             bindings = <
 &none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                  &tog 1       &to 0            &trans        &trans  &trans  &trans
 &none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                         &trans       &trans           &trans        &trans  &trans  &trans
-&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans  &trans  &trans       &to 6            &trans        &trans  &trans  &trans
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans  &trans  &trans       &tog 6           &trans        &trans  &trans  &trans
 &none  &none           &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                   &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &trans  &trans  &trans
             >;
 
@@ -299,7 +299,7 @@
             bindings = <
 &none         &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN                  &tog 1       &to 0            &trans        &trans  &trans  &bt BT_CLR
 &bt BT_SEL 0  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK                   &trans       &trans           &trans        &trans  &trans  &trans
-&bt BT_SEL 1  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK  &trans  &trans  &trans       &to 7            &trans        &trans  &trans  &trans
+&bt BT_SEL 1  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK  &trans  &trans  &trans       &tog 7           &trans        &trans  &trans  &trans
 &bt BT_SEL 3  &none    &none   &kp K_MENU  &kp SPACE  &kp TAB                          &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &trans  &trans  &trans
             >;
 
