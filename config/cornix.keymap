@@ -249,10 +249,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans  &trans  &trans        &to 0        &tog 1                     &none       &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none        &none
-&trans  &trans  &trans  &trans        &trans       &trans                     &none       &kp C_PREV  &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT   &none
-&trans  &trans  &trans  &trans        &tog 4       &trans     &trans  &trans  &none       &kp F13     &kp F14               &kp C_SLEEP           &kp C_POWER  &none
-&trans  &trans  &trans  &lt 4 ESCAPE  &lt 2 SPACE  &lt 3 TAB                  &kp C_STOP  &kp C_PLAY  &kp K_MUTE            &none                 &none        &none
+&trans  &trans  &trans  &trans        &to 0        &tog 1                     &kp C_POWER  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none        &none
+&trans  &trans  &trans  &trans        &trans       &trans                     &kp C_SLEEP  &kp C_PREV  &kp C_VOL_DN          &kp C_VOL_UP          &kp C_NEXT   &none
+&trans  &trans  &trans  &trans        &tog 4       &trans     &trans  &trans  &none        &kp F13     &kp F14               &none                 &none        &none
+&trans  &trans  &trans  &lt 4 ESCAPE  &lt 2 SPACE  &lt 3 TAB                  &kp C_STOP   &kp C_PLAY  &kp K_MUTE            &none                 &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
